@@ -21,7 +21,7 @@ const pickRandomHyong = (): void => {
   
 	hyongs.splice(hyongIndex, 1);
 
-  console.log(`${hyongNumber++}.${ hyongNumber <= 10 ? ' ': ''} Gjør: ${selectedHyong}`);
+  console.table(`${hyongNumber++}.${ hyongNumber <= 10 ? ' ': ''} Gjør: ${selectedHyong}`);
 };
 
 for (let i = 1; i <= hyongLength; i++) {
