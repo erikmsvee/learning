@@ -1,3 +1,11 @@
-- Higher order functions 
-  => pass a function into another function => func(val, val, function) { function(val, val) }
-  => function passed in is called "callback", same as used in "addEventListener", which returns an event.
+- Section 13
+  Higher order functions 
+  - pass a function into another function => func(val, val, function) { function(val, val) }
+  - function passed in is called "callback", same as used in "addEventListener", which returns an event.
+- Section 14
+  - JQuery selects and applies eventListeners to all  elements, not like document.queryselectorAll
+  - after, before, append, prepend adds element => $('element').after('<button>Click me</button>');
+  - remove removes all elements of type => $('element').remove();
+  - Nobody remembers code only consepts, thats why we have documentation
+    - https://api.jquery.com/ 
+    - https://www.w3schools.com/jquery/default.asp 
