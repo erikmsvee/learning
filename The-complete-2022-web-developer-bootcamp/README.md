@@ -8,4 +8,6 @@
   - remove removes all elements of type => $('element').remove();
   - Nobody remembers code only consepts, thats why we have documentation
     - https://api.jquery.com/ 
-    - https://www.w3schools.com/jquery/default.asp 
+    - https://www.w3schools.com/jquery/default.asp
+- Section 15
+  - 
