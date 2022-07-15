@@ -17,3 +17,5 @@
   - request is what comes from the browser
   - response is what is sendt back
     - app.get() is the function that is used to respond to request.
+- Section 20 - API
+  - 

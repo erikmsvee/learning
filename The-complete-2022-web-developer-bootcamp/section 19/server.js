@@ -6,7 +6,7 @@ const app = express();
 const baseDir = __dirname;
 
 // telling where static file is located to be used in html files
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 app.use(bodyParser.urlencoded({extended: true}));
 

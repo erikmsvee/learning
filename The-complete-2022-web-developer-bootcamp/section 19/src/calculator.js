@@ -1,10 +1,9 @@
 const add = (num1, num2) => { 
-  console.log(num1, num2);
-  return num1 + num2;
+  return Number(num1) + Number(num2);
 }
 
 const calculateBmi = (height, weight) => {
-  return (Number(weight) / (Number(height) * Number(height))).toFixed(2);
+  return (Number(weight) / ((Number(height) / 100) * (Number(height) / 100))).toFixed(2);
 }
 
 exports.add = add;

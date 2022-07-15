@@ -8,7 +8,7 @@ module.exports = (app, baseDir) => {
   app.post('/', (req, res) => {
     const {num1, num2} = req.body;
 
-    const result = calc.add(Number(num1), Number(num2));
+    const result = calc.add(num1, num2);
 
     res.send(`Result of calculation is ${result}`);
   });
