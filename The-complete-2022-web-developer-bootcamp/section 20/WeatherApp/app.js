@@ -18,17 +18,18 @@ app.post('/', (req, res) => {
   const units = 'metric';
   
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&limit=${limit}&appid=${apiKey}&units=${units}`;
+  
   https.get(url, (response) => {
     response.on('data', (data) => {
       const weatherData = JSON.parse(data);
 
-      const temp = weatherData.main.temp;
+      const temperature = weatherData.main.temp;
       const weatherDescription = weatherData.weather[0].description;
       const icon = weatherData.weather[0].icon;
       const imageUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
 
+      res.write(`<h1>The temperatur in ${city} is ${temperature} degrees Celcius</h1>`);
       res.write(`<p>The weather is currently ${weatherDescription}</p>`);
-      res.write(`<h1>The temperatur in ${query} is ${temp} degrees Celcius</h1>`);
       res.write(`<img src="${imageUrl}" alt="weather icon">`);
       res.send();
     });
