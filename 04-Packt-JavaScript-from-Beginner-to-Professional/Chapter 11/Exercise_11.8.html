@@ -1,28 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>JS Tester</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="output"></div>
-        <input type="text" name="myNum1">
-        <input type="text" name="myNum2">
+    <input type="text" name="myNum1" />
+    <input type="text" name="myNum2" />
     <script>
-        const eles = document.querySelectorAll("input");
-        const output = document.querySelector(".output");
-        eles.forEach(el => {
-            el.addEventListener("keydown", (e) => {
-                if (!isNaN(e.key)) {
-                    output.textContent += e.key;
-                }
-            });
-            el.addEventListener("keyup", (e) => {
-                console.log(e.key);
-            });
-            el.addEventListener("paste", (e) => {
-                console.log('pasted');
-            });
+      const eles = document.querySelectorAll('input');
+      const output = document.querySelector('.output');
+      eles.forEach((el) => {
+        el.addEventListener('keydown', (e) => {
+          if (!isNaN(e.key)) {
+            output.textContent += e.key;
+          }
         });
+        el.addEventListener('keyup', (e) => {
+          console.log(e.key);
+        });
+        el.addEventListener('paste', (e) => {
+          console.log('pasted');
+        });
+      });
     </script>
-</body>
+  </body>
 </html>

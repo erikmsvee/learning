@@ -1,5 +1,5 @@
-let firstname = "Maria";
-firstname = "Jacky";
+let firstname = 'Maria';
+firstname = 'Jacky';
 
 let nr1 = 12;
 var nr2 = 8;

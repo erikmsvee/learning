@@ -6,13 +6,13 @@ function getRecursive(nr) {
 getRecursive(3);
 
 function logRecursive(nr) {
-  console.log("Started function:", nr);
+  console.log('Started function:', nr);
   if (nr > 0) {
     logRecursive(nr - 1);
   } else {
-    console.log("done with recursion");
+    console.log('done with recursion');
   }
-  console.log("Ended function:", nr);
+  console.log('Ended function:', nr);
 }
 
 logRecursive(3);

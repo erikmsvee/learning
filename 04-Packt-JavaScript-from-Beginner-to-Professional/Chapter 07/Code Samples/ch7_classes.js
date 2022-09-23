@@ -7,8 +7,8 @@ class Dog {
   }
 }
 
-let dog = new Dog("JavaScript", 2.4, "brown", "chihuahua");
-console.log(dog.dogName, "is a", dog.breed, "and weighs", dog.weight, "kg.");
+let dog = new Dog('JavaScript', 2.4, 'brown', 'chihuahua');
+console.log(dog.dogName, 'is a', dog.breed, 'and weighs', dog.weight, 'kg.');
 
 class Person {
   constructor(firstname, lastname) {
@@ -17,11 +17,11 @@ class Person {
   }
 }
 
-let p = new Person("Maaike", "van Putten");
-console.log("Hi", p.firstname);
+let p = new Person('Maaike', 'van Putten');
+console.log('Hi', p.firstname);
 
-let p = new Person("Maaike");
-console.log("Hi", p.firstname, p.lastname);
+let p = new Person('Maaike');
+console.log('Hi', p.firstname, p.lastname);
 
 class Person {
   constructor(firstname, lastname) {
@@ -30,11 +30,11 @@ class Person {
   }
 
   greet() {
-    console.log("Hi there!");
+    console.log('Hi there!');
   }
 
   compliment(name, object) {
-    return "That's a wonderful " + object + ", " + name;
+    return "That's a wonderful " + object + ', ' + name;
   }
 }
 
@@ -51,7 +51,7 @@ class Vehicle {
   }
 
   move() {
-    console.log("moving at", this.currentSpeed);
+    console.log('moving at', this.currentSpeed);
   }
 
   accelerate(amount) {
@@ -65,7 +65,7 @@ class Motor extends Vehicle {
     this.fuel = fuel;
   }
 }
-let motor = new Motor("Black", 0, 250, "gasoline");
+let motor = new Motor('Black', 0, 250, 'gasoline');
 console.log(motor.color);
 motor.accelerate(50);
 motor.move();
@@ -95,7 +95,7 @@ class Person {
   }
 }
 
-let p = new Person("Maria", "Saga");
+let p = new Person('Maria', 'Saga');
 console.log(p.firstname);
 
 class Person {
@@ -105,7 +105,7 @@ class Person {
   }
 
   greet() {
-    console.log("Hi there!");
+    console.log('Hi there!');
   }
 }
 
@@ -113,6 +113,5 @@ Person.prototype.introduce = function () {
   console.log("Hi, I'm", this.firstname);
 };
 
-let p = new Person("Maria", "Saga");
+let p = new Person('Maria', 'Saga');
 p.introduce();
-

@@ -15,7 +15,7 @@ $('button').click(() => {
 
 $('input').keypress((event) => {
   $('h1').text(event.key);
-})
+});
 
 $('.class-button').click(() => {
   $('h1').css('color', 'red');

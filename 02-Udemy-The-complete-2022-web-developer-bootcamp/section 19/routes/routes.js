@@ -6,7 +6,7 @@ module.exports = (app, baseDir) => {
   });
 
   app.post('/', (req, res) => {
-    const {num1, num2} = req.body;
+    const { num1, num2 } = req.body;
 
     const result = calc.add(num1, num2);
 
@@ -17,11 +17,11 @@ module.exports = (app, baseDir) => {
     res.sendFile(baseDir + '/public/bmi-calculator/bmiCalculator.html');
   });
 
-    app.post('/bmi-calculator', (req, res) => {
-    const {height, weight} = req.body;
+  app.post('/bmi-calculator', (req, res) => {
+    const { height, weight } = req.body;
 
     const result = calc.calculateBmi(height, weight);
-    
+
     res.send(`Your BMI is ${result}`);
   });
-}
+};

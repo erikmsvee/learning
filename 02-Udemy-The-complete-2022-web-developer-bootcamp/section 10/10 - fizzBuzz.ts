@@ -9,14 +9,14 @@ const fizzBuzz = (amountOfPlayers: number): string[] => {
     } else if (playerNumber % 5 === 0) {
       game.push('Buzz');
     } else {
-      game.push(playerNumber.toString())
+      game.push(playerNumber.toString());
     }
   }
 
   game.push('End');
-  
+
   return game;
-}
+};
 
 const gamePlay = fizzBuzz(15);
 

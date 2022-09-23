@@ -2,15 +2,15 @@
   <head>
     <meta charset="utf-8" />
     <script src="https://unpkg.com/vue@next"></script>
-    
+
     <style type="text/css">
       .v-enter-from {
         opacity: 0;
-        background-color:#FFCCCC;
+        background-color: #ffcccc;
       }
       .v-enter-to {
-        opacity: 0,5;
-        background-color:black;
+        opacity: 0, 5;
+        background-color: black;
       }
       .v-enter-active {
         transition: opacity 2s, background-color 2s;
@@ -21,16 +21,15 @@
   <body>
     <div id="app"></div>
   </body>
-  
+
   <script>
-  
     var app = Vue.createApp({
       data() {
         return {
-          show: false    // initially hidden
-        }
+          show: false, // initially hidden
+        };
       },
-      template : `
+      template: `
         <button @click="show=!show">Produce the effect</button>
         <transition>
           <p v-if="show">
@@ -39,9 +38,7 @@
         </transition>   
       `,
     });
-    
-    var vm = app.mount("div#app");
-    
+
+    var vm = app.mount('div#app');
   </script>
-  
 </html>

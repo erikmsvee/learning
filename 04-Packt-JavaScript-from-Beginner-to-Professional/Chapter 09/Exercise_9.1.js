@@ -1,1 +1,1 @@
-console.dir(window)
+console.dir(window);

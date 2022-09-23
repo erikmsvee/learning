@@ -1,32 +1,32 @@
 function doingStuffAnonymously() {
-  console.log("Not so secret though.");
+  console.log('Not so secret though.');
 }
 
 let functionVariable = function () {
-  console.log("Not so secret though.");
+  console.log('Not so secret though.');
 };
 
 functionVariable();
 
 function doFlexibleStuff(executeStuff) {
   executeStuff();
-  console.log("Inside doFlexibleStuffFunction.");
+  console.log('Inside doFlexibleStuffFunction.');
 }
 
 doFlexibleStuff(functionVariable);
 
 let anotherFunctionVariable = function () {
-  console.log("Another anonymous function implementation.");
+  console.log('Another anonymous function implementation.');
 };
 
 doFlexibleStuff(anotherFunctionVariable);
 
 function doOuterFunctionStuff(nr) {
-  console.log("Outer function");
+  console.log('Outer function');
   doInnerFunctionStuff(nr);
   function doInnerFunctionStuff(x) {
     console.log(x + 7);
-    console.log("I can access outer variables:", nr);
+    console.log('I can access outer variables:', nr);
   }
 }
 
@@ -37,7 +37,7 @@ function doOuterFunctionStuff(nr) {
   function doInnerFunctionStuff(x) {
     let z = 10;
   }
-  console.log("Not accessible:", z);
+  console.log('Not accessible:', z);
 }
 
 doOuterFunctionStuff(2);

@@ -3,10 +3,10 @@ for (let name of names) {
 }
 
 let car = {
-  model: "Golf",
-  make: "Volkswagen",
+  model: 'Golf',
+  make: 'Volkswagen',
   year: 1999,
-  color: "black",
+  color: 'black',
 };
 
 for (let prop in car) {
@@ -19,27 +19,27 @@ for (let prop in car) {
 
 let cars = [
   {
-    model: "Golf",
-    make: "Volkswagen",
+    model: 'Golf',
+    make: 'Volkswagen',
     year: 1999,
-    color: "black",
+    color: 'black',
   },
   {
-    model: "Picanto",
-    make: "Kia",
+    model: 'Picanto',
+    make: 'Kia',
     year: 2020,
-    color: "red",
+    color: 'red',
   },
   {
-    model: "Peugeot",
-    make: "208",
+    model: 'Peugeot',
+    make: '208',
     year: 2021,
-    color: "black",
+    color: 'black',
   },
   {
-    model: "Fiat",
-    make: "Punto",
+    model: 'Fiat',
+    make: 'Punto',
     year: 2020,
-    color: "black",
+    color: 'black',
   },
 ];

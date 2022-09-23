@@ -1,14 +1,14 @@
-import Element from "./element.js";
+import Element from './element.js';
 const GlobalApp = {
   data() {
     return {
-      elements : []
-    }
+      elements: [],
+    };
   },
-  components : {
-    Element:Element
+  components: {
+    Element: Element,
   },
-  template : `
+  template: `
     <button @click="add()">Add Element</button>
     <ul>
       <Element v-for="(element, index) in elements" :key="index" :text="element" 
@@ -17,9 +17,9 @@ const GlobalApp = {
       />
     </ul>
   `,
-  methods : {
+  methods: {
     add() {
-      var element = "Element " + (this.elements.length + 1);
+      var element = 'Element ' + (this.elements.length + 1);
       this.elements.push(element);
     },
     remove(params) {
@@ -29,9 +29,9 @@ const GlobalApp = {
     modify(params) {
       var index = params.index;
       var value = params.value;
-      this.elements[index] = value;  // new element value
-    }
-  }
-}
+      this.elements[index] = value; // new element value
+    },
+  },
+};
 
 export default GlobalApp;

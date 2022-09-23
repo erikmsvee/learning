@@ -8,7 +8,7 @@ const nextSequence = () => {
   level++;
 
   $('#level-title').text(`Level ${level}`);
-  
+
   const randomNumber = Math.floor(Math.random() * 4);
   const randomChosenColor = buttonColors[randomNumber];
 
@@ -16,11 +16,11 @@ const nextSequence = () => {
 
   $(`#${randomChosenColor}`).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
   playSound(randomChosenColor);
-}
+};
 
 const playSound = (color) => {
- const sound = new Audio(`sounds/${color}.mp3`);
- sound.play();
+  const sound = new Audio(`sounds/${color}.mp3`);
+  sound.play();
 };
 
 const animatePress = (currentColor) => {
@@ -28,14 +28,13 @@ const animatePress = (currentColor) => {
   button.addClass('pressed');
 
   setTimeout(() => {
-    button.removeClass('pressed')
+    button.removeClass('pressed');
   }, 100);
 };
 
 const checkAnswer = (currentLevel) => {
-
-  if(gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
-    if(userClickedPattern.length === gamePattern.length) {
+  if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
+    if (userClickedPattern.length === gamePattern.length) {
       setTimeout(() => {
         nextSequence();
       }, 1000);
@@ -59,11 +58,11 @@ const startOver = () => {
   level = 0;
 };
 
-$('.btn').click((event) => {  
-  if(level > 0) {
+$('.btn').click((event) => {
+  if (level > 0) {
     const clickedButton = event.target.id;
     userClickedPattern.push(clickedButton);
-    
+
     animatePress(clickedButton);
     playSound(clickedButton);
 

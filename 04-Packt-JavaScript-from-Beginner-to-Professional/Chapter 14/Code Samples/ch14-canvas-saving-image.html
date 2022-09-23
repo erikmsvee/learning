@@ -9,24 +9,24 @@
   <body>
     <canvas id="canvas"></canvas>
     <input type="color" id="squareColor" />
-    <br>
+    <br />
     <img src="" width="200" height="200" id="holder" />
     <input type="button" id="save" value="save" />
     <script>
-      let canvas = document.getElementById("canvas");
-      let ctx = canvas.getContext("2d");
+      let canvas = document.getElementById('canvas');
+      let ctx = canvas.getContext('2d');
       canvas.width = 200;
       canvas.height = 200;
-      
-      let bgC = document.getElementById("squareColor");
-      bgC.addEventListener("change", function () {
+
+      let bgC = document.getElementById('squareColor');
+      bgC.addEventListener('change', function () {
         color = event.target.value;
         draw(color);
       });
 
-      document.getElementById("save").addEventListener("click", function () {
+      document.getElementById('save').addEventListener('click', function () {
         let dataURL = canvas.toDataURL();
-        document.getElementById("holder").src = dataURL;
+        document.getElementById('holder').src = dataURL;
       });
 
       function draw(color) {

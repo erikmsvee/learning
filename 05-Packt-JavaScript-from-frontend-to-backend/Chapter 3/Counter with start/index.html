@@ -7,20 +7,17 @@
   <body>
     <div id="app"></div>
   </body>
-  
+
   <script type="module">
-  
-    import Counter from "./counter.js";
-    
+    import Counter from './counter.js';
+
     var app = Vue.createApp({
-      components : {
-        Counter:Counter
+      components: {
+        Counter: Counter,
       },
-      template : "<counter start='10' />"
+      template: "<counter start='10' />",
     });
-    
-    var vm = app.mount("div#app");
-    
+
+    var vm = app.mount('div#app');
   </script>
-  
 </html>

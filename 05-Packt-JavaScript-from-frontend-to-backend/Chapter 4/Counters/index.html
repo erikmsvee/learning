@@ -7,22 +7,19 @@
   <body>
     <div id="app"></div>
   </body>
-  
+
   <script type="module">
-  
-    import Counters from "./counters.js";
-    
+    import Counters from './counters.js';
+
     var app = Vue.createApp({
-      components : {
-        Counters:Counters
+      components: {
+        Counters: Counters,
       },
-      template : `
+      template: `
         <counters />
       `,
     });
-    
-    var vm = app.mount("div#app");
-    
+
+    var vm = app.mount('div#app');
   </script>
-  
 </html>

@@ -8,13 +8,13 @@
     <script>
       function call() {
         let xhttp = new XMLHttpRequest();
-        let url = "some valid url";
+        let url = 'some valid url';
         xhttp.load = function () {
           if (this.status == 200 && this.readyState == 4) {
-            document.getElementById("content").innerHTML = this.responseText;
+            document.getElementById('content').innerHTML = this.responseText;
           }
         };
-        xhttp.open("GET", url, true);
+        xhttp.open('GET', url, true);
         xhttp.send();
       }
     </script>

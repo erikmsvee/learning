@@ -1,7 +1,7 @@
 const playSound = (soundFile) => {
   const audio = new Audio(soundFile);
   audio.play();
-}
+};
 
 const handleDrumClasses = (selecteClass) => {
   document.querySelector(`.${selecteClass}`).classList.add('pressed');
@@ -9,12 +9,12 @@ const handleDrumClasses = (selecteClass) => {
   setTimeout(() => {
     document.querySelector(`.${selecteClass}`).classList.remove('pressed');
   }, 200);
-}
+};
 
 const handleDrumPlaying = (drum) => {
   let soundFolder = 'sounds/';
 
-  switch(drum) {
+  switch (drum) {
     case 'w':
       playSound(`${soundFolder}crash.mp3`);
       break;
@@ -26,38 +26,36 @@ const handleDrumPlaying = (drum) => {
       break;
     case 'd':
       playSound(`${soundFolder}tom-1.mp3`);
-      break; 
+      break;
     case 'l':
       playSound(`${soundFolder}tom-2.mp3`);
-      break; 
+      break;
     case 'j':
       playSound(`${soundFolder}tom-3.mp3`);
-      break; 
+      break;
     case 'k':
       playSound(`${soundFolder}tom-4.mp3`);
-      break; 
+      break;
     default:
       console.log('Error');
       return;
   }
-}
+};
 
 const handleClicked = (event) => {
   const buttonClicked = event.target.innerText;
   handleDrumPlaying(buttonClicked);
   handleDrumClasses(buttonClicked);
-
 };
 
 const handleKeypress = (event) => {
   const keyPressed = event.key;
   handleDrumPlaying(keyPressed);
   handleDrumClasses(keyPressed);
-
 };
 
-document.querySelectorAll('.drum').forEach(( el ) => {
+document.querySelectorAll('.drum').forEach((el) => {
   el.addEventListener('click', handleClicked);
 });
 
-document.addEventListener('keydown', handleKeypress)
+document.addEventListener('keydown', handleKeypress);

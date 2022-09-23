@@ -1,15 +1,15 @@
 function hiThere() {
   let you = prompt("What's your name? ");
-  console.log("Hello", you, "!");
+  console.log('Hello', you, '!');
 }
 
 hiThere();
 
-console.log("this is an argument");
-prompt("argument here too");
+console.log('this is an argument');
+prompt('argument here too');
 
 let arr = [];
-arr.push("argument");
+arr.push('argument');
 
 function addTwoNumbers(x, y) {
   console.log(x + y);
@@ -22,7 +22,7 @@ function myFunc(param1, param2) {
   // code of the function;
 }
 
-myFunc("arg1", "arg2");
+myFunc('arg1', 'arg2');
 
 function addTwoNumbers(x = 2, y = 3) {
   console.log(x + y);
@@ -32,7 +32,7 @@ addTwoNumbers();
 addTwoNumbers(6, 6);
 addTwoNumbers(10);
 
-let favoriteSubject = prompt("What is your favorite subject?");
+let favoriteSubject = prompt('What is your favorite subject?');
 
 let result = addTwoNumbers(4, 5);
 console.log(result);

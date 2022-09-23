@@ -8,13 +8,13 @@
   </head>
   <body>
     <input type="file" id="imgLoader" />
-    <br>
+    <br />
     <canvas id="canvas"></canvas>
     <script>
-      let canvas = document.getElementById("canvas");
-      let ctx = canvas.getContext("2d");
-      let imgLoader = document.getElementById("imgLoader");
-      imgLoader.addEventListener("change", upImage, false);
+      let canvas = document.getElementById('canvas');
+      let ctx = canvas.getContext('2d');
+      let imgLoader = document.getElementById('imgLoader');
+      imgLoader.addEventListener('change', upImage, false);
       function upImage() {
         let fr = new FileReader();
         fr.readAsDataURL(event.target.files[0]);

@@ -1,9 +1,9 @@
-function greet(fullName){
-    console.log(`Welcome, ${fullName[0]} ${fullName[1]}`)
+function greet(fullName) {
+  console.log(`Welcome, ${fullName[0]} ${fullName[1]}`);
 }
-function processCall(user, callback){
-    const fullName = user.split(" ");
-    callback(fullName);
+function processCall(user, callback) {
+  const fullName = user.split(' ');
+  callback(fullName);
 }
 
-processCall("Laurence Svekis", greet);
+processCall('Laurence Svekis', greet);

@@ -1,1 +1,1 @@
-alert("This is a warning message displayed by JavaScript");
+alert('This is a warning message displayed by JavaScript');

@@ -9,20 +9,20 @@
     <script>
       function logEvent() {
         let p = event.target;
-        if (p.name == "firstname") {
-          message("First Name Changed to  " + p.value);
+        if (p.name == 'firstname') {
+          message('First Name Changed to  ' + p.value);
         } else {
-          message("Last Name Changed to  " + p.value);
+          message('Last Name Changed to  ' + p.value);
         }
       }
 
       function sendInfo() {
         let p = event.target.parentElement;
-        message("Welcome " + p.firstname.value + " " + p.lastname.value);
+        message('Welcome ' + p.firstname.value + ' ' + p.lastname.value);
       }
 
       function message(m) {
-        document.getElementById("welcome").innerHTML = m;
+        document.getElementById('welcome').innerHTML = m;
       }
     </script>
   </body>

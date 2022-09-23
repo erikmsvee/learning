@@ -1,35 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Complete JavaScript Course</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="output">Complete JavaScript Course</div>
     Search for:
-    <input id="sText" type="text">
-    <br> Replace with:
-    <input id="rText" type="text">
-    <br>
+    <input id="sText" type="text" />
+    <br />
+    Replace with:
+    <input id="rText" type="text" />
+    <br />
     <button>Replace</button>
     <script>
-        const output = document.getElementById("output");
-        const findValue = document.getElementById("sText");
-        const replaceValue = document.getElementById("rText");
-        document.querySelector("button").addEventListener("click", lookUp);
+      const output = document.getElementById('output');
+      const findValue = document.getElementById('sText');
+      const replaceValue = document.getElementById('rText');
+      document.querySelector('button').addEventListener('click', lookUp);
 
-        function lookUp() {
-            const s = output.textContent;
-            const rt = replaceValue.value;
-            const re = new RegExp(findValue.value, "gi");
-            if (s.match(re)) {
-                let newValue = s.replace(re, rt);
-                output.textContent = newValue;
-            }
+      function lookUp() {
+        const s = output.textContent;
+        const rt = replaceValue.value;
+        const re = new RegExp(findValue.value, 'gi');
+        if (s.match(re)) {
+          let newValue = s.replace(re, rt);
+          output.textContent = newValue;
         }
+      }
     </script>
-
-</body>
-
+  </body>
 </html>

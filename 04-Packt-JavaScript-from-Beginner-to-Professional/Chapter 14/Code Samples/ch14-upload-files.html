@@ -3,11 +3,11 @@
     <input type="file" multiple onchange="uploadFile(this.files)" />
     <div id="message"></div>
     <script>
-      let message = document.getElementById("message");
+      let message = document.getElementById('message');
 
       function uploadFile(files) {
         for (let i = 0; i < files.length; i++) {
-          message.innerHTML += files[i].name + "<br>";
+          message.innerHTML += files[i].name + '<br>';
         }
       }
     </script>

@@ -22,13 +22,13 @@ for (let i = 0; i < 3; i++) {
 
 console.log(arrOfArrays);
 
-let names = ["chantal", "john", "maxime", "bobbi", "jair"];
+let names = ['chantal', 'john', 'maxime', 'bobbi', 'jair'];
 for (let i = 0; i < names.length; i++) {
   console.log(names[i]);
 }
 
 //let names = ["chantal", "john", "maxime", "bobbi", "jair"];
 for (let i = 0; i < names.length; i++) {
-  names[i] = "hello " + names[i];
+  names[i] = 'hello ' + names[i];
 }
 console.log(names);

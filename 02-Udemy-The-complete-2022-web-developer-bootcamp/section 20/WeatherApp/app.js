@@ -4,21 +4,21 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 const apiKey = 'e6424e27b8d3f44945c522d782d38c95';
 
 app.post('/', (req, res) => {
   const city = req.body.cityName ? req.body.cityName : '';
   const state = req.body.stateName ? `,${req.body.stateName}` : '';
-  const country = req.body.countryName ? `,${req.body.countryName}`: '';
+  const country = req.body.countryName ? `,${req.body.countryName}` : '';
 
   const query = `${city}${state}${country}`;
   const limit = 1;
   const units = 'metric';
-  
+
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&limit=${limit}&appid=${apiKey}&units=${units}`;
-  
+
   https.get(url, (response) => {
     response.on('data', (data) => {
       const weatherData = JSON.parse(data);

@@ -1,10 +1,10 @@
 [
-    {
-        "name": "Learn JavaScript",
-        "status" : true
-    },
-    {
-        "name": "Try JSON",
-        "status" : false
-    }
+  {
+    "name": "Learn JavaScript",
+    "status": true
+  },
+  {
+    "name": "Try JSON",
+    "status": false
+  }
 ]

@@ -5,4 +5,4 @@ let html, text;
 // prompt('What is your name')
 // let html = Math.floor(Math.random() * 100);
 
-app.innerText = html
+app.innerText = html;

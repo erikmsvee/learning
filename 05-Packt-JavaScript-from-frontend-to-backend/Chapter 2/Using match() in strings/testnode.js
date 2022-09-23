@@ -1,12 +1,12 @@
-var s = "Hello";
+var s = 'Hello';
 
-console.log("s =", s);
+console.log('s =', s);
 
 // search for "Hel"
 console.log(`s.match(/Hel/) = ${s.match(/Hel/)}`);
 
 // search for "hel"
-console.log(`s.match(/hel/) = ${s.match(/hel/)}`);  
+console.log(`s.match(/hel/) = ${s.match(/hel/)}`);
 
 // search for "hel" ignoring upper/lower case
 console.log(`s.match(/hel/i) = ${s.match(/hel/i)}`);

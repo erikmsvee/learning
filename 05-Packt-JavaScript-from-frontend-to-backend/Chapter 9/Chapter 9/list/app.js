@@ -7,14 +7,14 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
-var mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/mydb_test");
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/mydb_test');
 
 var listSchema = mongoose.Schema({
- text : String
+  text: String,
 });
 
-var List = mongoose.model("elements", listSchema);
+var List = mongoose.model('elements', listSchema);
 
 var app = express();
 
@@ -32,44 +32,44 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 // creating a new element in the list
-app.post("/list", function(req, res) {
+app.post('/list', function (req, res) {
   var text = req.body.text;
   console.log(text);
-  List.create({text:text}, function(err, doc) {
-    res.json({id:doc._id});
+  List.create({ text: text }, function (err, doc) {
+    res.json({ id: doc._id });
   });
 });
 
 // retrieving list of elements
-app.get("/list", function(req, res) {
-  List.find(function(err, elements) {
-    res.json({elements:elements});
+app.get('/list', function (req, res) {
+  List.find(function (err, elements) {
+    res.json({ elements: elements });
   });
 });
 
 // modifying an element in the list
-app.put("/list", function(req, res) {
+app.put('/list', function (req, res) {
   var id = req.body.id;
   var text = req.body.text;
-  List.updateOne({_id:id}, {text:text}).exec();
+  List.updateOne({ _id: id }, { text: text }).exec();
   res.send();
 });
 
 // remove an element from the list
-app.delete("/list", function(req, res) {
+app.delete('/list', function (req, res) {
   var id = req.body.id;
   console.log(req.body.id);
-  List.deleteOne({_id:id}).exec();
+  List.deleteOne({ _id: id }).exec();
   res.send();
 });
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};

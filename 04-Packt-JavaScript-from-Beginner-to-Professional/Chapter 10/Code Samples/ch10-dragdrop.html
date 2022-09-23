@@ -19,12 +19,10 @@
   <body>
     <div class="box" ondrop="dDrop()" ondragover="nDrop()">
       1
-      <div id="dragme" ondragstart="dStart()" draggable="true">
-        Drag Me Please!
-      </div>
+      <div id="dragme" ondragstart="dStart()" draggable="true">Drag Me Please!</div>
     </div>
     <div class="box" ondrop="dDrop()" ondragover="nDrop()">2</div>
-   <script>
+    <script>
       let holderItem;
 
       function dStart() {
@@ -36,8 +34,8 @@
       }
 
       function dDrop() {
-       // event.preventDefault();
-        if (event.target.className == "box") {
+        // event.preventDefault();
+        if (event.target.className == 'box') {
           event.target.appendChild(holderItem);
         }
       }

@@ -1,26 +1,26 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
 }
 
 #product-overview {
-    background: url("freedom.jpg");
-    width: 100%;
-    height: 528px;
-    padding: 10px;  
+  background: url('freedom.jpg');
+  width: 100%;
+  height: 528px;
+  padding: 10px;
 }
 
 .section-title {
-    color: #2ddf5c;
+  color: #2ddf5c;
 }
 
 #product-overview h1 {
-    color: white;
-    font-family: 'Anton', sans-serif;
+  color: white;
+  font-family: 'Anton', sans-serif;
 }
 
 .main-header {
@@ -30,41 +30,40 @@ body {
 }
 
 .main-header > div {
-    display: inline-block;
-    vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .main-header__brand {
-    color: #0e4f1f;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 22px;
+  color: #0e4f1f;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .main-nav {
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 75px);
-    vertical-align: middle;
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 75px);
+  vertical-align: middle;
 }
 
 .main-nav__items {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-
 .main-nav__item {
-    display: inline-block;
-    margin: 0 16px;
+  display: inline-block;
+  margin: 0 16px;
 }
 
 .main-nav__item a {
-    color: #0e4f1f;
-    text-decoration: none;
-    padding-bottom: 3px;
-    font-weight: bold;
+  color: #0e4f1f;
+  text-decoration: none;
+  padding-bottom: 3px;
+  font-weight: bold;
 }
 
 /* .main-nav__item a::after {
@@ -74,24 +73,24 @@ body {
 
 .main-nav__item a:hover,
 .main-nav__item a:active {
-    color: white;
+  color: white;
 }
 
 .main-nav__item a:hover {
-    color: white;
-    border-bottom: 1px solid white;
+  color: white;
+  border-bottom: 1px solid white;
 }
 
 .main-nav__item--cta a {
-    color: white;
-    background-color: #ff1b68;
-    padding: 8px 16px;
-    border-radius: 8px;
+  color: white;
+  background-color: #ff1b68;
+  padding: 8px 16px;
+  border-radius: 8px;
 }
 
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active {
-    color: #ff1b68;
-    background-color: white;
-    border: none;
+  color: #ff1b68;
+  background-color: white;
+  border: none;
 }

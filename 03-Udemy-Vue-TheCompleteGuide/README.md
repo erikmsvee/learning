@@ -1,4 +1,4 @@
-- Vue can 
+- Vue can
   - Controll parts of a page
   - Be a Single Page Application
-- 
+-
