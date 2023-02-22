@@ -1,0 +1,13 @@
+name: issue-assigner
+on:
+  issues:
+    types: [opened]
+jobs:
+  auto-assign:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Auto-assign issue'
+        uses: pozil/auto-assign-issue@1.0.3
+        with:
+          repo-token: ${{ secrest.GITHUB_TOKEN }}
+          assignees: testerik
