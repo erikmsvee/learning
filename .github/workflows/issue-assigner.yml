@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Auto-assign issue'
-        uses: pozil/auto-assign-issue@1.0.3
+        uses: pozil/auto-assign-issue@v1
         with:
-          repo-token: ${{ secrest.GITHUB_TOKEN }}
-          assignees: testerik
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          assignees: esv-ambita
