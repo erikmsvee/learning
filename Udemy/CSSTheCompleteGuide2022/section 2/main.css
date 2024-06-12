@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #product-overview {
@@ -12,9 +12,5 @@ body {
 
 #product-overview h1 {
   color: white;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
 }
-
-/* h1 {
-    font-family: sans-serif;
-} */
